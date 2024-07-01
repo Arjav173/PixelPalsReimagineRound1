@@ -11,16 +11,16 @@
     top: 47vh;
     left: 36vw;
     rotate: 12deg;
-    scale: 1.2;
+    scale: 1;
 }
 .lowerSection .rightImg{
     position: absolute;
     right: 10vw;
-    top: 25vh;
+    top: 15vh;
     rotate: -12deg;
-    scale: 1.6;
+    scale: 1.2;
 }
 
-.BestSellerCards{
-    flex-shrink: none;
+.SingleCard{
+    flex-shrink: 0;
 }

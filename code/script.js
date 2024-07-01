@@ -31,3 +31,22 @@ hairProduct.forEach(function(value){
 })
 
 document.querySelector(".cards").innerHTML = container;
+
+const scrollStep = 300; // Adjust this value to control the scroll distance
+
+    function scrollLeft() {
+        const store = document.querySelector('.BestSellerCards');
+        store.scrollBy({
+            left: -scrollStep,
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollRight() {
+        const store = document.querySelector('.BestSellerCards');
+        store.scrollBy({
+            left: scrollStep,
+            behavior: 'smooth'
+        });
+    }
+

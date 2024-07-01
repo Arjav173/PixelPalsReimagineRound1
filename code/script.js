@@ -18,7 +18,7 @@ const hairProduct =[
     {
         productName : "Conditioners",
         img:"./images/Artboard_3_0e56e93c-a50f-4805-9326-086bee9f07af.avif"
-    },
+    }
 ]
 
 var container =""

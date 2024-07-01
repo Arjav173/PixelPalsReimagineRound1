@@ -23,4 +23,128 @@
 
 .SingleCard{
     flex-shrink: 0;
+    
+}
+.BestSellerCards{
+    scrollbar-width: none;
+}
+.trustBanner{
+    display: flex;
+    background-color: #F2EFEB;
+    width: 100%;
+    height: 50vmax;
+    margin-top: 10vmax;
+    color: #A6603A;
+    }
+.left_trustBanner{
+    width: 45%;
+    font-size: 4vw;
+    font-weight: 700;
+    padding-top: 4.2vw;
+    padding-left: 8vw;
+    padding-right: 6vw;
+}
+.right_trustBanner{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-top: 2vw;
+    gap: 1vh;
+
+}
+.rtB1{
+    display: flex;
+    gap: 4vw;
+    padding: 1vmax;
+}
+.rtB1 img{
+    height:13vmax;
+    width: 13vmax;
+    object-fit: cover;
+}
+.rtB2{
+    display: flex;
+    gap: 4vw;
+    padding: 1vmax;
+}
+.rtB2 img{
+    height:13vmax;
+    width: 13vmax;
+    object-fit: cover;
+}
+.rtB3{
+    display: flex;
+    gap: 4vw;
+    padding: 1vmax;
+}
+.rtB3 img{
+    height:13vmax;
+    width: 13vmax;
+    object-fit: cover;
+}
+.rtB_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+}
+.rtB_text h3{
+    font-weight: 500;
+    font-size: 1.7vw;
+}
+.rtB_text p{
+    font-weight: 400;
+    font-size: 1.3vw;
+    padding-right: 6vw;
+}
+.otherProducts{
+    width: 100%;
+    height: 47vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw 0vw;
+
+}
+.heading_oP h1{
+    color:#1025A1;
+    font-size: 4vw;
+    font-weight: 600;
+    margin-bottom: 6vmax;
+}
+.prod_categories{
+    display: flex;
+    gap: 3vw;
+    
+}
+.cate_1{
+    color:#1025A1 ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 500;
+    gap: 0.75vw;
+}
+.cate_1 img{
+    height: 14vmax;
+    width: 14vmax;
+}
+.bestSellers{
+    position: relative;
+    
+}
+.arrows #scrollLeftButton{
+    position: absolute;
+    top: 50vh;
+    left: 5vw;
+    border-radius: 50%;
+}
+.arrows #scrollRightButton{
+    position: absolute;
+    top: 50vh;
+    right: 5vw;
+    border-radius: 50%;
 }

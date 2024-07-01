@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    position: relative;
+}
+.lowerSection .middleImg{
+    position: absolute;
+    top: 47vh;
+    left: 36vw;
+    rotate: 12deg;
+    scale: 1.2;
+}
+.lowerSection .rightImg{
+    position: absolute;
+    right: 10vw;
+    top: 25vh;
+    rotate: -12deg;
+    scale: 1.6;
+}

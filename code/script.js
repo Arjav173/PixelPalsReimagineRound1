@@ -114,3 +114,35 @@ function scrollRight() {
 document.getElementById('scrollLeftButton').addEventListener('click', scrollLeft);
 document.getElementById('scrollRightButton').addEventListener('click', scrollRight);
 
+const gifs = [
+    {
+        img:"images/1716491254368.gif",
+        about:"Derma Tested"
+    },
+    {
+        img:"images/1716491282085.gif",
+        about:"Plastic Neutral"
+    },
+    {
+        img:"images/1716491305116.gif",
+        about:"Cruelty Free"
+    },
+    {
+        img:"images/1716491338059.gif",
+        about:"High Performing"
+    },
+    {
+        img:"images/1716491384295.gif",
+        about:"Plant Based"
+    }
+]
+var gifContainer = ""
+
+gifs.forEach(function(value){
+    gifContainer += `<div class="1st flex flex-col items-center">
+                            <img class="w-[5vw]" src="${value.img}" alt="GIF" loop>
+                            <h1 class="text-[#1025A1] mt-[2vh]">${value.about}</h1>
+                        </div>`
+})
+
+document.querySelector(".gifs").innerHTML = gifContainer

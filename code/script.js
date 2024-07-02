@@ -69,7 +69,7 @@ var contain = ""
 bestSellers.forEach(function(value){
     contain += `<div class="SingleCard bg-[#F2EFEB] w-[25vw] py-[5vh] mt-[3vw] rounded-xl flex flex-col justify-center items-center">
                     <h1 class="text-[1.8vw] text-center text-[#1025A1] font-semibold">${value.h1}</h1>
-                    <img class="h-[30vh] object-cover"
+                    <img class=" object-cover"
                          src="${value.img}"
                          alt="">
                     <div class="about-Price flex items-center justify-between px-[3vw] text-[#1025A1] font-semibold mt-[3vh]">

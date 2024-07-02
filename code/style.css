@@ -32,7 +32,6 @@
     display: flex;
     background-color: #F2EFEB;
     width: 100%;
-    height: 50vmax;
     margin-top: 10vmax;
     color: #A6603A;
     }
@@ -207,7 +206,62 @@
         left: 10vw;
         scale: 2;
     }
-    
-    
+    .hairProducts .enjoy{
+        margin-top: 5vh;
+        font-size: 7vw;
+    }
+    .hairProducts .cards{
+        margin-top: 3vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hairProducts .cards .card h1{
+        font-size: 4vw;
+    }
+    .main{
+        overflow-x: hidden;
+    }
+    .trustBanner{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10vh;
+    }
+    .trustBanner .left_trustBanner p{
+        width: 100vw;
+        font-size: 5vw;
+    }
+    .trustBanner .right_trustBanner{
+        gap: 5vh;
+    }
+    .trustBanner h3{
+        width: 50vw;
+        font-size: 5vw;
+    }
+    .rtB_text p{
+        font-size: 2.5vw;
+    }
+    .bestSellers .title{
+        font-size: 10vw;
+        margin-top: 5vh;
+    }
+    .bestSellers .BestSellerCards{
+        display: flex;
+        margin-top: 3vh;
+    }
+    .bestSellers .BestSellerCards .SingleCard{
+        width: 50vw;
+        height: 50vh;
+        padding: 2vw;
+    }
+    .bestSellers .arrows{
+        display: none;
+    }
+    .bestSellers .hidden{
+        display: initial;
+        display: flex;
+        justify-content: center;
+    }
+    .SingleCard h1{
+        font-size: 4vw;
+    }
 }
-  

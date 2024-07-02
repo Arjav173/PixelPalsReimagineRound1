@@ -148,4 +148,66 @@
     right: 5vw;
     border-radius: 50%;
 }
+
+@media (max-width:600px) {
+    .head-Bar{
+        margin-top: 2vh;
+    }
+    .bar h1{
+        font-size: 3.5vw ;
+    }
+    nav a{
+        display: none;
+    }
+    nav .hidden{
+        display: initial;
+        padding: 3vw 2vw;
+        
+    }
+    .logo{
+        position: absolute;
+        top: 2vw;
+    }
+    .lowerSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .lowerSection .leftText{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .lowerSection .leftText .expert{
+        font-size: 10vw;
+    }
+    .justLaunched{
+        font-size: 3vw;
+        width: 80vw;
+        padding: 2vw 1vw;
+    }
+    .box{
+        height: 80vh;
+    }
+    .trusted{
+        font-size: 5vw;
+    }
+    .shark{
+        width: 80vw;
+    }
+    .imageBox .rightImg{
+        position: absolute;
+        top: 60vh;
+        scale: 1.8;
+    }
+    .imageBox .middleImg{
+        position: absolute;
+        top: 70vh;
+        left: 10vw;
+        scale: 2;
+    }
+    
+    
+}
   

@@ -147,6 +147,133 @@
     right: 5vw;
     border-radius: 50%;
 }
+.founderStory{
+    margin-left: 4vmax;
+    margin-right: 4vmax;
+    margin-top: 5vmax;
+    margin-bottom: 10vmax;
+    width: 92%;
+    border-radius: 20px;
+    height: 46vmax;
+    background-color: #F2EFEB; 
+    padding: 3vw 4vw;
+    display: flex;
+}
+.fS_left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.fS_left h1{
+    margin-top: 1.5vw;
+    font-size: 4vw;
+    font-weight: 700;
+    color: #1025A1;
+}
+.fS_left p{
+    font-size: 2vw;
+    font-weight: 500;
+    padding: 1vw 4vw;    
+    text-align: center;
+}
+.fS_left button{
+    font-size: 2.2vw;
+    font-weight: 600;
+    padding: 0.3vw 1.5vw;   
+    background-color: white; 
+    border-radius: 30px;
+    margin-top: 2vw;
+    color: #1025A1;
+}
+.fS_right{
+    width: 50%;
+    height: 100%;
+}
+.fS_right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.reviews{
+    margin-left: 4vmax;
+    margin-right: 4vmax;
+    margin-top: 5vmax;
+    margin-bottom: 10vmax;
+    width: 92%;
+    border-radius: 20px;
+    height: 40vmax;
+    background-color: #F2EFEB; 
+    padding: 3vw 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rev_headings{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2.5vw;
+}
+.rev_headings h1{
+    font-size: 3vw;
+    font-weight: 700;
+    color: #1025A1;
+}
+.rev_container{
+    display: flex;
+    width: 100%;
+    height: 26.5vmax;
+    gap: 2vw;
+    justify-content: center;
+
+}
+
+.rev_cont_card{
+    display: flex;
+    width: 26%;
+    flex-direction: column;
+    background-color: #A6603A;
+    padding: 0.9vw 1vw;
+    color: white;
+    border-radius: 30px;
+}
+
+.card_texts{
+    display: flex;
+    font-size: 1vw;
+}
+.card_texts p{
+    font-size: 1vw;
+    padding: 1vh 0vh;
+}
+.rev_cont_card img{
+    height: 12vmax;
+    width: 22vmax;
+    object-fit: cover;
+    border-radius: 27px;
+}
+.card_texts img{
+    margin-top: 2vw;
+    height:8vmax;
+    width: 7vmax;
+    object-fit: cover;
+}
+#rev_card2{
+    scale: 1;
+    z-index: 3;
+}
+#rev_card1{
+    scale: 0.9;
+    z-index: 1;
+}
+#rev_card3{
+    scale: 0.9;
+    z-index: 2;
+}
 
 @media (max-width:600px) {
     .head-Bar{
@@ -250,8 +377,7 @@
     }
     .bestSellers .BestSellerCards .SingleCard{
         width: 50vw;
-        height: 50vh;
-        padding: 2vw;
+        padding: 4vw;
     }
     .bestSellers .arrows{
         display: none;
@@ -262,6 +388,113 @@
         justify-content: center;
     }
     .SingleCard h1{
+        font-size: 3vw;
+    }
+    .buildBoxBanner{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 5vw;
+    }
+    .buildBoxBanner .left{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .left h1{
+        font-size: 8vw;
+    }
+    .left h2{
+        width: 100%;
+        font-size: 5vw;
+        text-align: center;
+    }
+    .left button{
+        width: 30vw;
+        padding: 2vw;
+    }
+    .buildBoxBanner .imgContainer{
+        width: 90vw;
+    }
+    .otherProducts .heading_oP h1{
+        font-size: 8vw;
+    }
+    .prod_categories h3{
         font-size: 4vw;
     }
+    .cate_1{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .cate_1 img{
+        height: 20vw ;
+        width: 20vw;
+    }
+    .USP .box .title{
+        font-size: 5vw;
+    }
+    .USP .box .gifs{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10vw;
+    }
+    .USP .box img{
+        width: 20vw;
+    }
+    .USP .box h1{
+        font-size: 5vw;
+    }
+    .featured{
+        margin-top: 5vh;
+    }
+    .featured h1{
+        font-size: 7vw;
+    }
+    .featured .magzines{
+        margin-top: 4vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10vw;
+    }
+    .featured .magzines img{
+        width: 24vw;
+    }
+    .blogs{
+        margin-top: 10vh;
+    }
+    .blogs .h1{
+        font-size: 10vw;
+    }
+    .blogs .emptyBox{
+        display: none;
+    }
+    .blogs .blog{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blog .img{
+        height: 10.5vh;
+    }
+    .blog hr{
+        margin-top: 1vh;
+    }
+    .text-arrow {
+        margin-top: 1vh ;
+    }
+    .blog h1{
+        font-size: 3vw;
+    }
+    
+    .view button{
+        width: 40vw;
+        padding: 1.4vw;
+    }
+    .reviews{
+        height: 30vh;
+        width: 90vw;
+    }
+
 }
+  

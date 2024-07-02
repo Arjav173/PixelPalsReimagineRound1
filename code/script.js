@@ -24,9 +24,9 @@ const hairProduct =[
 var container =""
 
 hairProduct.forEach(function(value){
-    container+=` <div class="card bg-[#F2EFEB] w-[20vw] px-[2vw] py-[2vh] mt-[3vw] rounded-xl">
+    container+=` <div class="card bg-[#F2EFEB] w-[30vw] px-[2vw] py-[2vh] mt-[3vw] rounded-xl">
                 <h1 class="text-[2vw] text-center text-[#1025A1] font-semibold">${value.productName}</h1>
-                <img class="mt-[3vw] w-full h-[25vh] object-cover " src="${value.img}" alt="">
+                <img class="mt-[3vw] w-[30vw] object-cover " src="${value.img}" alt="">
             </div>`
 })
 
@@ -83,7 +83,7 @@ bestSellers.forEach(function(value){
                 </div>`
 })
 document.querySelector(".BestSellerCards").innerHTML = contain
-const scrollStep = 300; // Adjust this value to control the scroll distance
+const scrollStep = 250;
 
 function scrollLeft() {
     console.log("Left scroll button clicked");
@@ -141,7 +141,7 @@ var gifContainer = ""
 gifs.forEach(function(value){
     gifContainer += `<div class="1st flex flex-col items-center">
                             <img class="w-[5vw]" src="${value.img}" alt="GIF" loop>
-                            <h1 class="text-[#1025A1] mt-[2vh]">${value.about}</h1>
+                            <h1 class="text-[#1025A1] text-[2vw] font-semibold mt-[2vh]">${value.about}</h1>
                         </div>`
 })
 

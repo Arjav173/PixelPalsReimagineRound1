@@ -152,9 +152,8 @@
     margin-right: 4vmax;
     margin-top: 5vmax;
     margin-bottom: 10vmax;
-    width: 92%;
+    width: 85vw;
     border-radius: 20px;
-    height: 46vmax;
     background-color: #F2EFEB; 
     padding: 3vw 4vw;
     display: flex;
@@ -203,9 +202,7 @@
     margin-right: 4vmax;
     margin-top: 5vmax;
     margin-bottom: 10vmax;
-    width: 92%;
-    border-radius: 20px;
-    height: 40vmax;
+    width: 90vw;
     background-color: #F2EFEB; 
     padding: 3vw 4vw;
     display: flex;
@@ -239,7 +236,7 @@
     background-color: #A6603A;
     padding: 0.9vw 1vw;
     color: white;
-    border-radius: 30px;
+    border-radius: 1vw;
 }
 
 .card_texts{
@@ -254,7 +251,7 @@
     height: 12vmax;
     width: 22vmax;
     object-fit: cover;
-    border-radius: 27px;
+    border-radius: 1vw;
 }
 .card_texts img{
     margin-top: 2vw;
@@ -287,10 +284,11 @@
     }
     nav .hidden{
         display: initial;
-        padding: 3vw 2vw;
+        padding: 5vw 2vw;
         
     }
     .logo{
+        width: 40vw;
         position: absolute;
         top: 2vw;
     }
@@ -306,7 +304,7 @@
         flex-direction: column;
     }
     .lowerSection .leftText .expert{
-        font-size: 10vw;
+        font-size: 9vw;
     }
     .justLaunched{
         font-size: 3vw;
@@ -317,19 +315,19 @@
         height: 80vh;
     }
     .trusted{
-        font-size: 5vw;
+        font-size: 4vw;
     }
     .shark{
-        width: 80vw;
+        width: 60vw;
     }
     .imageBox .rightImg{
         position: absolute;
-        top: 60vh;
+        top: 56vh;
         scale: 1.8;
     }
     .imageBox .middleImg{
         position: absolute;
-        top: 70vh;
+        top: 67vh;
         left: 10vw;
         scale: 2;
     }
@@ -492,9 +490,61 @@
         padding: 1.4vw;
     }
     .reviews{
-        height: 30vh;
-        width: 90vw;
+        width: 85vw;
+        margin-top: 3vh;
+        padding: 3vw;
+    }
+    .rev_headings h1{
+        font-size: 8vw;
+        margin-top: 1vh;
+        display: flex;
+    }
+    .rev_container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;        
+    }
+    .rev_cont_card{
+        width: 60vw; 
+        padding: 3vw 6vw;
+    }
+    .rev_cont_card .reviewImg{
+        width: 60vw;
+        height: auto;
+    
+    }
+    .rev_cont_card .productImg{
+        scale: 1.8;
+        margin-top: 5vh;
+    }
+    #rev_card1 ,#rev_card3{
+        scale: 1;
+    }
+    .card_texts p{
+        font-size: 3.4vw;
+    }
+    .founderStory{
+        display: flex;
+        flex-direction: column;
+    }
+    .fS_left{
+        width: 100%;
+    }
+    .fS_left h1{
+        font-size: 8vw;
+    }
+    .fS_left p{
+        font-size: 4vw;
+    }
+    .fS_left button{
+        padding: 2vw;
+    }
+    .fS_right{
+        margin-top: 4vh;
+        width: 100%;
     }
 
 }
-  

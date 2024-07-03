@@ -24,7 +24,7 @@ const hairProduct =[
 var container =""
 
 hairProduct.forEach(function(value){
-    container+=` <div class="card bg-[#F2EFEB] w-[30vw] px-[2vw] py-[2vh] mt-[3vw] rounded-xl">
+    container+=` <div class="card bg-[#F2EFEB] w-[30vw] px-[2vw] py-[2vh] mt-[3vw] rounded-xl" data-aos="flip-left" data-aos-duration="1000">
                 <h1 class="text-[2vw] text-center text-[#1025A1] font-semibold">${value.productName}</h1>
                 <img class="mt-[3vw] w-[30vw] object-cover " src="${value.img}" alt="">
             </div>`
@@ -67,9 +67,9 @@ const bestSellers = [
 var contain = ""
 
 bestSellers.forEach(function(value){
-    contain += `<div class="SingleCard bg-[#F2EFEB] w-[25vw] py-[5vh] mt-[3vw] rounded-xl flex flex-col justify-center items-center">
-                    <h1 class="text-[1.8vw] text-center text-[#1025A1] font-semibold">${value.h1}</h1>
-                    <img class=" object-cover"
+    contain += `<div class="SingleCard bg-[#F2EFEB] w-[25vw] py-[5vh] mt-[3vw] rounded-xl flex flex-col justify-center items-center" data-aos="flip-right" data-aos-duration="1000">
+                    <h1 class="text-[1.8vw] text-center text-[#1025A1] font-semibold" >${value.h1}</h1>
+                    <img class="h-[25vh] object-cover"
                          src="${value.img}"
                          alt="">
                     <div class="about-Price flex items-center justify-between px-[3vw] text-[#1025A1] font-semibold mt-[3vh]">
@@ -146,3 +146,25 @@ gifs.forEach(function(value){
 })
 
 document.querySelector(".gifs").innerHTML = gifContainer
+
+AOS.init({
+    offset: 200,       // offset (in px) from the original trigger point
+    delay: 0,          // values from 0 to 3000, with step 50ms
+    duration: 600,     // values from 0 to 3000, with step 50ms
+    easing: 'ease',    // default easing for AOS animations
+    once: false,       // whether animation should happen only once - while scrolling down
+    mirror: true,      // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  });
+  
+  var menu = document.querySelector(".menu")
+  var mobileMenu = document.querySelector(".mobileMenu")
+  var close = document.querySelector(".close")
+  menu.addEventListener("click",function(){
+    mobileMenu.classList.remove("hidden")
+    mobileMenu.style.top = '5%'
+  })
+
+  close.addEventListener("click",function(){
+    mobileMenu.style.top = '100%'
+  })

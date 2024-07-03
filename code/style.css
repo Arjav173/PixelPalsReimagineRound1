@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: none;
+    
 }
 .box{
     position: relative;
@@ -27,6 +29,10 @@
 }
 .BestSellerCards{
     scrollbar-width: none;
+}
+.arrows button{
+    position: absolute;
+    z-index: 30;
 }
 .trustBanner{
     display: flex;
@@ -152,7 +158,7 @@
     margin-right: 4vmax;
     margin-top: 5vmax;
     margin-bottom: 10vmax;
-    width: 85vw;
+    width: 90vw;
     border-radius: 20px;
     background-color: #F2EFEB; 
     padding: 3vw 4vw;
@@ -233,10 +239,11 @@
     display: flex;
     width: 26%;
     flex-direction: column;
-    background-color: #A6603A;
+    background-color: #9139902f;
     padding: 0.9vw 1vw;
-    color: white;
+    color: #2312df;
     border-radius: 1vw;
+    line-height: 2.8vh;
 }
 
 .card_texts{
@@ -246,6 +253,7 @@
 .card_texts p{
     font-size: 1vw;
     padding: 1vh 0vh;
+    font-weight: 700;
 }
 .rev_cont_card img{
     height: 12vmax;
@@ -271,6 +279,26 @@
     scale: 0.9;
     z-index: 2;
 }
+.lowerSection button:hover{
+    background-color: #1025A1;
+    color: white;
+    transition: all ease-in 0.3s;
+}
+.buildBoxBanner button:hover{
+    background-color:#BFE5EF;
+    color: #1025A1;
+    transition: all ease-in 0.3s;
+}
+.founderStory button:hover{
+    background-color: #1025A1;
+    color: white;
+    transition: all ease-in 0.5s;
+}
+.blogs button:hover{
+    background-color:#BFE5EF;
+    color: #1025A1;
+    transition: all ease-in 0.3s;
+}
 
 @media (max-width:600px) {
     .head-Bar{
@@ -291,6 +319,17 @@
         width: 40vw;
         position: absolute;
         top: 2vw;
+    }
+    .mobileMenu{
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        top: 100%;
+        z-index: 40;
+        cursor: pointer;
+        transition: top 0.3s ease;
     }
     .lowerSection{
         display: flex;
@@ -363,7 +402,7 @@
         font-size: 5vw;
     }
     .rtB_text p{
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
     .bestSellers .title{
         font-size: 10vw;
@@ -376,6 +415,10 @@
     .bestSellers .BestSellerCards .SingleCard{
         width: 50vw;
         padding: 4vw;
+    }
+    .SingleCard img{
+        height: 20vh;
+        margin-top: 2vh;
     }
     .bestSellers .arrows{
         display: none;
@@ -504,6 +547,7 @@
         height: auto;
         display: flex;
         flex-wrap: wrap;
+        margin-top: 4vh;
         align-items: center;
         justify-content: center;        
     }
@@ -527,6 +571,7 @@
         font-size: 3.4vw;
     }
     .founderStory{
+        width: 85vw;
         display: flex;
         flex-direction: column;
     }
@@ -546,5 +591,48 @@
         margin-top: 4vh;
         width: 100%;
     }
-
+    .footer{
+        margin-top: 4vh;
+        padding: 0vw 1vw;
+    }
+    .footer .mainBox img{
+        width: 100vw;
+        height: 18vh;
+    }
+    .footer .mainBox .boxContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .mainBox .boxContainer .box1 ,.box2{
+        width: 100%;
+        
+    }
+    .footer .mainBox .boxContainer .box1{
+        border-right: 0;
+    }
+    .box1 h1{
+        font-size: 4vw;
+        text-align: center;
+    }
+    .box1 .emailBox{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-size: 3vw;
+    }
+    .emailBox .email{
+        width: auto;
+    }
+    .emailBox input{
+        font-size: 3vw;
+    }
+    .emailBox button{
+        font-size: 3vw;
+        width: 20vw;
+    }
+    .box2 h1{
+        font-size: 3vw;
+    }
+    .lasth1{
+        font-size: 2.3vw;
+    }
 }

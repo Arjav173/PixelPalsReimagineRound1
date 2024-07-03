@@ -11,10 +11,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
           rel="stylesheet" />
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+          <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+               
 </head>
 
 <body>
-    <div class="main mb-[10vh]">
+    <div class="main mb-[10vh] overflow-x-hidden">
         <div class="head-Bar mt-[4vh] flex justify-center items-center">
             <div class="bar w-[95vw] bg-[#F2EFEB] py-[1vh] rounded-full flex justify-center items-center">
                 <h1 class="text-[#1025A1] text-[2vw]">Save ₹250 on first order ₹999 . Code: LOVEARATA</h1>
@@ -28,7 +31,7 @@
                         <a href="">Products</a>
                         <a href="">About</a>
                     </div>
-                    <div class="logo w-[25vw]"> <img src="./images/Arata_Logo_-_Source_File_Blue.svg"
+                    <div class="logo w-[25vw]" data-aos="fade-up"> <img src="./images/Arata_Logo_-_Source_File_Blue.svg"
                              alt=""></div>
                     <div class="rightSide flex py-[5vh] gap-[3vw] text-[1.6vw]">
                         <a href="">Search</a>
@@ -36,11 +39,22 @@
                         <a href="">Cart</a>
                         
                     </div>
-                    <i class="hidden ri-menu-3-line"></i>
+                    <i class="menu hidden py-3 ri-menu-3-line"></i>
+                    <div class="mobileMenu absolute w-[85vw] hidden">
+                        <div class="menuText px-[5vw] py-[3vh] text-[6vw] flex flex-col gap-[3vh] text-right">
+                            <div class="close"><i class="ri-close-line"></i></div>
+                            <h1>Shop</h1>
+                            <h1>About</h1>
+                            <h1>Search</h1>
+                            <h1>Products</h1>
+                            <h1>Account</h1>
+                            <h1>Cart</h1>
+                        </div>
+                    </div>
                 </nav>
                 <div class="lowerSection flex w-[95vw]">
                     <div class="leftText w-[30vw]">
-                        <h1 class="expert text-[4vw] text-[#1025A1] leading-tight mt-[5vh] ml-[1vw]">India’s leading hair
+                        <h1 class="expert text-[4vw] text-[#1025A1] leading-tight mt-[5vh] ml-[1vw]" >India’s leading hair
                             beauty experts 💪🏻</h1>
                         <button
                                 class="justLaunched w-[30vw] text-[1.2vw] px-[1.3vw] py-[1.5vh] bg-[#BFE5EF] rounded-full mt-[5vh] ml-[0.8vw]">Just
@@ -65,15 +79,15 @@
             </div>
         </div>
         <div class="hairProducts">
-            <h1 class="enjoy text-[3vw] mt-[15vh] text-[#1025A1] flex justify-center font-semibold">ENJOY YOUR HAIR CARE!!</h1>
+            <h1 class="enjoy text-[3vw] mt-[15vh] text-[#1025A1] flex justify-center font-semibold" data-aos="zoom-in">ENJOY YOUR HAIR CARE!!</h1>
             <div class="cards px-[5vw] mt-[10vh] flex justify-evenly gap-10"></div>
         </div>
         <div class="trustBanner">
-            <div class="left_trustBanner">
+            <div class="left_trustBanner" >
                 <p>Here’s Why you should trust ARATA</p>
             </div>
-            <div class="right_trustBanner">
-                <div class="rtB1">
+            <div class="right_trustBanner" data-aos="zoom-out" data-aos-duration ="2000">
+                <div class="rtB1" >
                     <img src="./images/Screenshot_2024-06-07_202113-removebg-preview (1).png" alt="img">
                     <div class="rtB_text">
                         <h3>Summer Promo</h3>
@@ -97,7 +111,7 @@
             </div>
         </div>
         <div class="bestSellers">
-            <h1 class="title text-[4vw] font-semibold mt-[15vh] text-[#1025A1] flex justify-center ">BestSellers</h1>
+            <h1 class="title text-[4vw] font-semibold mt-[15vh] text-[#1025A1] flex justify-center " data-aos="zoom-in" >BestSellers</h1>
             <div class=" arrows flex justify-between items-center">
                 <button id="scrollLeftButton" class="bg-gray-200 px-4 py-2 rounded-l-md" onclick="scrollLeft()">
                     <i class="ri-arrow-left-line text-lg"></i>
@@ -111,7 +125,7 @@
             <div class="BestSellerCards px-[5vw] mt-[8vh] flex gap-10 overflow-x-auto ">       
             </div>
         </div> 
-        <div class="buildBoxBanner bg-[#F2EFEB] mt-[10vw]  flex  rounded-xl  ">
+        <div class="buildBoxBanner bg-[#F2EFEB] mt-[10vw]  flex  rounded-xl  " data-aos="flip-up">
             <div class="left w-[59vw] flex flex-col pl-[5vw] pb-[4vh]">
                 <h1
                     class="title text-[#1025A1] text-[5vw] font-bold mt-[4vw]   ">
@@ -133,7 +147,7 @@
                 <div class="heading_oP">
                     <h1>We’re not just hair care</h1>
                 </div>
-                <div class="prod_categories">
+                <div class="prod_categories" data-aos="flip-right" data-aos-duration="3000">
                     <div class="cate_1">
                         <img src="./images/1Hair_Care_9125e183-2fb4-499e-9963-548898941903.avif" alt="img">
                         <h3>Hair Care</h3>
@@ -165,21 +179,21 @@
                     <h1>Real Results</h1>
                 </div>
                 <div class="rev_container">
-                    <div  id="rev_card1" class="rev_cont_card">
+                    <div  id="rev_card1" class="rev_cont_card" data-aos="flip-left" data-aos-duration="1000">
                         <img class="reviewImg" src="./images/review3.webp" alt="reviews">
                         <div class="card_texts">
                             <p>Arata Hair Growth Formula stimulates with natural extracts, promoting healthy follicles and strong, vibrant hair growth. Effective and recommended</p>
                             <img class="productImg" src="images/WhatsAppImage2024-05-02at5.16.54PM-removebg-preview.png" alt="products">
                         </div>
                     </div>
-                    <div  id="rev_card2" class="rev_cont_card">
+                    <div  id="rev_card2" class="rev_cont_card" data-aos="flip-up" data-aos-duration="1000">
                         <img class="reviewImg" src="./images/review2.webp" alt="reviews">
                         <div class="card_texts">
                             <p>Arata Skin Tone Product evens complexion, reduces dark spots with natural ingredients, leaving skin radiant and smooth. A must-try for glowing skin</p>
                             <img class="productImg" src="images/image-removebg-preview (2).png" alt="products">
                         </div>
                     </div>
-                    <div  id="rev_card3" class="rev_cont_card">
+                    <div  id="rev_card3" class="rev_cont_card" data-aos="flip-right" data-aos-duration="1000">
                         <img class="reviewImg" src="./images/review1.webp" alt="reviews">
                         <div class="card_texts">
                             <p>Natural ingredients, effective results, minimalist packaging. Ideal for clean, hydrated skin without harsh chemicals. Highly recommended</p>
@@ -202,7 +216,7 @@
                 <h1 class="text-center text-[#1025A1] text-[4vw] font-semibold">Featured In</h1>
                 <div class="magzines flex mt-[10vh] items-center justify-between px-[3vw] ">
                     <img class="w-[20vw] " src="./images/cosmoplitian.avif" alt="">
-                    <img class="w-[20vw] " src="./images/grazia.avif" alt="">
+                    <img class="w-[20vw] ml-[3vw]" src="./images/grazia.avif" alt="">
                     <img class="w-[20vw] " src="./images/vogue.avif" alt="">
                     <img class="w-[20vw] " src="./images/elle.png" alt="">
                     <img class="w-[20vw] " src="./images/telegraph.avif" alt="">
@@ -268,16 +282,16 @@
             </div>
             <div class="footer px-[2vw] mt-[10vh] text-[#1025A1]">
                 <div class="mainBox bg-[#F2EFEB] rounded-2xl">
-                    <img class="w-[95vw] object-cover h-[15vw]" src="./images/Arata_Logo_-_Source_File_Blue.svg" alt="">
-                    <hr class="border-t-2 border-black mt-[5vh]">
+                    <img class="w-[95vw] object-cover h-[15vw]" data-aos="flip-up" src="./images/Arata_Logo_-_Source_File_Blue.svg" alt="">
+                    <hr class="border-t-2 border-black ">
                     <div class="boxContainer flex ">
                         <div class="box1 w-[50vw] border-r-2 border-black border-b-2">
                             <h1 class="px-[4vw] text-[1.3vw] mt-[3vh] font-semibold">Join us on the ARATA to an effortless hair.</h1>
                             <h1 class="px-[4vw] text-[1.3vw] font-semibold">Sign up to stay updated with special offers</h1>
                             <div class="emailBox flex justify-center items-center mt-[5vh]">
-                                <div class="bg-white w-[40vw] rounded shadow-md flex justify-center items-center">
-                                    <input type="email" placeholder="Enter email address" class=" px-[4vw] py-[1.2vh] w-full mb-3 rounded focus:outline-none focus:border-blue-500">
-                                    <button class="bg-blue-500 text-white w-[10vw] px-[2vw] py-[2vh] rounded hover:bg-blue-600 focus:outline-none">Subscribe</button>
+                                <div class="email bg-white w-[40vw] rounded shadow-md flex justify-center items-center">
+                                    <input type="email" placeholder="Enter email address" class=" px-[4vw] py-[1.2vh] w-full  rounded focus:outline-none focus:border-blue-500 text-[1.3vw]">
+                                    <button class="subscribe bg-blue-500 text-white w-[10vw] px-[2vw] py-[2vh] rounded hover:bg-blue-600 focus:outline-none text-[1.3vw]">Subscribe</button>
                                 </div>
                             </div>
                             
@@ -315,7 +329,7 @@
                             </div>
                         </div>
                     </div>
-                    <h1 class="text-center ">© 2024. Slick Organics Private Limited ® U36999DL2017PTC310502t</h1>
+                    <h1 class="lasth1 text-center text-[1.3vw]">© 2024. Slick Organics Private Limited ® U36999DL2017PTC310502t</h1>
                 </div>
             </div>
         </div>

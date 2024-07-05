@@ -34,40 +34,42 @@ document.querySelector(".cards").innerHTML = container;
 
 const bestSellers = [
     {
-        h1 : "Intensive Hair Growth Hair Growth Serum",
+        h1: "Intensive Hair Growth Hair Growth Serum",
         img: "./images/WhatsAppImage2024-05-02at5.16.54PM-removebg-preview.png",
         about: "Boosts hair Growth Increases Thickness Strengthens Hair ",
         price: "₹584"
     },
     {
-        h1 : "Growth Strong Combo Shampoo + Serum",
+        h1: "Growth Strong Combo Shampoo + Serum",
         img: "./images/image-removebg-preview.png",
         about: "Controls Hair Loss Boosts Hair Growth Reduce Hair Thinning",
         price: "₹1393"
     },
     {
-        h1 : "Hair Growth oil <br> with Capilia Longa",
+        h1: "Hair Growth oil <br> with Capilia Longa",
         img: "./images/image-removebg-preview (3).png",
         about: "Nourishes hair & boosts Hair Growth Reduce Hair breakage",
         price: "₹539"
     },
     {
-        h1 : "Hair Styling Combo <br> Hair Gel + Cream",
+        h1: "Hair Styling Combo <br> Hair Gel + Cream",
         img: "./images/1.ArataHairStylingCombo-removebg-preview.png",
         about: "Reduce breakage & offer moisture for healthy styling.",
         price: "₹989"
     },
     {
-        h1 : "Hair Fix Stick <br> Anti-Frizz",
+        h1: "Hair Fix Stick <br> Anti-Frizz",
         img: "./images/Primarycopy3-removebg-preview.png",
         about: "Tames flyaways & smooths hair for a sleek look",
         price: "₹718"
     },
-]
-var contain = ""
+];
 
-bestSellers.forEach(function(value){
-    contain += `<div class="SingleCard bg-[#F2EFEB] w-[25vw] py-[5vh] mt-[3vw] rounded-xl flex flex-col justify-center items-center" data-aos="flip-right" data-aos-duration="1000">
+// Function to populate best sellers
+function populateBestSellers() {
+    let contain = "";
+    bestSellers.forEach(function (value) {
+        contain += `<div class="SingleCard bg-[#F2EFEB] w-[25vw] py-[5vh] mt-[3vw] rounded-xl flex flex-col justify-center items-center" data-aos="flip-right" data-aos-duration="1000">
                     <h1 class="text-[1.8vw] text-center text-[#1025A1] font-semibold" >${value.h1}</h1>
                     <img class="h-[25vh] object-cover"
                          src="${value.img}"
@@ -80,37 +82,59 @@ bestSellers.forEach(function(value){
                             <h1>${value.price}</h1>
                         </div>
                     </div>
-                </div>`
-})
-document.querySelector(".BestSellerCards").innerHTML = contain
-const scrollStep = 250;
+                </div>`;
+    });
+    document.querySelector(".BestSellerCards").innerHTML = contain;
+}
 
+// Call the function to populate best sellers
+populateBestSellers();
+
+// Auto-scroll function
+const scrollStep = 125;
+let scrollPosition = 0;
+
+function autoScroll() {
+    const store = document.querySelector('.BestSellerCards');
+    if (store) {
+        if (scrollPosition >= store.scrollWidth - store.clientWidth) {
+            // Reset scroll position to start
+            scrollPosition = 0;
+        }
+        store.scrollTo({
+            left: scrollPosition,
+            behavior: 'smooth'
+        });
+        scrollPosition += scrollStep;
+    }
+}
+
+// Call autoScroll function every 3 seconds (adjust as needed)
+setInterval(autoScroll, 1000);
+
+// Scroll left function
 function scrollLeft() {
-    console.log("Left scroll button clicked");
     const store = document.querySelector('.BestSellerCards');
     if (store) {
         store.scrollBy({
             left: -scrollStep,
             behavior: 'smooth'
         });
-    } else {
-        console.error("Element '.BestSellerCards' not found");
     }
 }
 
+// Scroll right function
 function scrollRight() {
-    console.log("Right scroll button clicked");
     const store = document.querySelector('.BestSellerCards');
     if (store) {
         store.scrollBy({
             left: scrollStep,
             behavior: 'smooth'
         });
-    } else {
-        console.error("Element '.BestSellerCards' not found");
     }
 }
 
+// Event listeners for scroll buttons
 document.getElementById('scrollLeftButton').addEventListener('click', scrollLeft);
 document.getElementById('scrollRightButton').addEventListener('click', scrollRight);
 

@@ -8,6 +8,30 @@
 .box{
     position: relative;
 }
+.logo{
+    width: 25vw;
+}
+.justLaunched {
+    width: 30vw;
+    font-size: 1.2vw;
+    padding: 1.3vw 1.5vh; /* Adjust padding as per your design */
+    background-color: #BFE5EF;
+    border-radius: 9999px; /* To get a rounded effect */
+    margin-top: 5vh;
+    margin-left: 0.8vw;
+    /* Add any other styles or adjustments needed */
+}
+.trusted {
+    margin-top: 5vh;
+    margin-left: 0.8vw;
+    font-size: 2vw;
+    color: #1025A1;
+    /* Add any other styles or adjustments needed */
+}
+.shark{
+    width: 30vw;
+}
+
 .lowerSection .middleImg{
     position: absolute;
     top: 47vh;
@@ -299,7 +323,14 @@
     color: #1025A1;
     transition: all ease-in 0.3s;
 }
-
+.box2{
+   font-size: 1vw;
+   width: 50vw;
+    
+}
+.lasth1{
+    font-size: 1.3vw;
+}
 @media (max-width:600px) {
     .head-Bar{
         margin-top: 2vh;

@@ -162,7 +162,7 @@ AOS.init({
   var close = document.querySelector(".close")
   menu.addEventListener("click",function(){
     mobileMenu.classList.remove("hidden")
-    mobileMenu.style.top = '5%'
+    mobileMenu.style.top = '2%'
   })
 
   close.addEventListener("click",function(){
